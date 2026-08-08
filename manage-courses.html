@@ -73,15 +73,31 @@ Add, edit and delete yoga courses.
 
 <h2>Add New Course</h2>
 
-<form>
+<form id="courseForm">
 
-<input type="text" placeholder="Course Name">
+<input
+type="text"
+id="courseTitle"
+placeholder="Course Name"
+required>
 
-<input type="text" placeholder="Duration">
+<input
+type="text"
+id="courseDuration"
+placeholder="Duration"
+required>
 
-<input type="text" placeholder="Course Fee">
+<input
+type="text"
+id="coursePrice"
+placeholder="Course Fee"
+required>
 
-<textarea placeholder="Course Description"></textarea>
+<textarea
+id="courseDescription"
+placeholder="Course Description"
+required>
+</textarea>
 
 <button type="submit">
 
@@ -179,7 +195,13 @@ Add Course
 
 </footer>
 
-<script src="JAVASCRIPT/script.js"></script>
+<!-- Add these at the bottom of each HTML page, just before </body> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="JAVASCRIPT/supabase.js"></script>
+
+<script src="JAVASCRIPT/main.js"></script>
 
 </body>
 

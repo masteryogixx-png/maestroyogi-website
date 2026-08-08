@@ -73,15 +73,28 @@ Create, edit and delete yoga events.
 
 <h2>Add New Event</h2>
 
-<form>
+<form id="eventForm">
 
-<input type="text" placeholder="Event Title">
+<input
+type="text"
+id="eventTitle"
+placeholder="Event Title"
+required>
 
-<input type="date">
+<input
+type="date"
+id="eventDate"
+required>
 
-<input type="text" placeholder="Location">
+<input
+type="text"
+id="eventLocation"
+placeholder="Location"
+required>
 
-<textarea placeholder="Event Description"></textarea>
+<textarea
+id="eventDescription"
+placeholder="Event Description"></textarea>
 
 <button type="submit">
 
@@ -179,7 +192,13 @@ Add Event
 
 </footer>
 
-<script src="JAVASCRIPT/script.js"></script>
+<!-- Add these at the bottom of each HTML page, just before </body> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="JAVASCRIPT/supabase.js"></script>
+
+<script src="JAVASCRIPT/main.js"></script>
 
 </body>
 
