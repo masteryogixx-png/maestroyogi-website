@@ -38,7 +38,7 @@ if (contactForm) {
 
         }
 
-        const { error } = await supabase
+       const { error } = await supabaseClient
 
             .from("contact_messages")
 
