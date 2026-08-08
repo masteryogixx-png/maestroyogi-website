@@ -3964,3 +3964,77 @@ font-size:14px;
 
 }
 
+/* ==========================================
+   ADMIN DASHBOARD BUTTONS
+========================================== */
+
+.dashboard-btn {
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background: #2e8b57;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.dashboard-btn:hover {
+
+    background: #236b43;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ==========================================
+   LOGOUT BUTTON
+========================================== */
+
+.logout-btn {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    padding: 12px 22px;
+
+    background: #dc3545;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    z-index: 9999;
+
+    transition: 0.3s;
+
+}
+
+.logout-btn:hover {
+
+    background: #b02a37;
+
+    transform: translateY(-2px);
+
+}

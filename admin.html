@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | MaestroYogi</title>
 
-<title>Admin Dashboard | MaestroYogi</title>
-
-<link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 
@@ -18,94 +16,144 @@
 
 <header id="header">
 
-<div class="nav-links">
+    <div class="nav-links">
 
-<a href="index.html">Home</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="asanas.html">Asanas</a>
+        <a href="meditation.html">Meditation</a>
+        <a href="course.html">Course</a>
+        <a href="government-programs.html">Programs</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
 
-<a href="about.html">About</a>
+    </div>
 
-<a href="asanas.html">Asanas</a>
-
-<a href="meditation.html">Meditation</a>
-
-<a href="course.html">Course</a>
-
-<a href="government-programs.html">Programs</a>
-
-<a href="events.html">Events</a>
-
-<a href="gallery.html">Gallery</a>
-
-<a href="news.html">News</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="login.html">Login</a>
-
-</div>
 </header>
+
 
 <section class="dashboard">
 
-<div class="container">
+    <div class="container">
 
-<h1>Admin Dashboard</h1>
+        <h1>Admin Dashboard</h1>
 
-<div class="dashboard-grid">
+        <div class="dashboard-grid">
 
-<div class="dashboard-card">
-<h2>Gallery</h2>
-<p>Upload and manage gallery photos.</p>
-<button>Manage Gallery</button>
-</div>
 
-<div class="dashboard-card">
-<h2>Events</h2>
-<p>Create, edit and delete events.</p>
-<button>Manage Events</button>
-</div>
+            <!-- GALLERY -->
 
-<div class="dashboard-card">
-<h2>News</h2>
-<p>Publish announcements and updates.</p>
-<button>Manage News</button>
-</div>
+            <div class="dashboard-card">
 
-<div class="dashboard-card">
-<h2>Courses</h2>
-<p>Manage yoga courses.</p>
-<button>Manage Courses</button>
-</div>
+                <h2>Gallery</h2>
 
-<div class="dashboard-card">
-<h2>Students</h2>
-<p>View registered students.</p>
-<button>View Students</button>
-</div>
+                <p>Upload and manage gallery photos.</p>
 
-<div class="dashboard-card">
-<h2>Contact Messages</h2>
-<p>View messages from visitors.</p>
-<button>View Messages</button>
-</div>
+                <a href="manage-gallery.html" class="dashboard-btn">
+                    Manage Gallery
+                </a>
 
-</div>
+            </div>
 
-</div>
+
+            <!-- EVENTS -->
+
+            <div class="dashboard-card">
+
+                <h2>Events</h2>
+
+                <p>Create, edit and delete events.</p>
+
+                <a href="manage-events.html" class="dashboard-btn">
+                    Manage Events
+                </a>
+
+            </div>
+
+
+            <!-- NEWS -->
+
+            <div class="dashboard-card">
+
+                <h2>News</h2>
+
+                <p>Publish announcements and updates.</p>
+
+                <a href="manage-news.html" class="dashboard-btn">
+                    Manage News
+                </a>
+
+            </div>
+
+
+            <!-- COURSES -->
+
+            <div class="dashboard-card">
+
+                <h2>Courses</h2>
+
+                <p>Manage yoga courses.</p>
+
+                <a href="manage-courses.html" class="dashboard-btn">
+                    Manage Courses
+                </a>
+
+            </div>
+
+
+            <!-- STUDENTS -->
+
+            <div class="dashboard-card">
+
+                <h2>Students</h2>
+
+                <p>View registered students.</p>
+
+                <a href="manage-students.html" class="dashboard-btn">
+                    View Students
+                </a>
+
+            </div>
+
+
+            <!-- MESSAGES -->
+
+            <div class="dashboard-card">
+
+                <h2>Contact Messages</h2>
+
+                <p>View messages from visitors.</p>
+
+                <a href="manage-messages.html" class="dashboard-btn">
+                    View Messages
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
 
+
 <footer class="footer">
 
-<p>
-
-© 2026 MaestroYogi | All Rights Reserved
-
-</p>
+    <p>
+        © 2026 MaestroYogi | All Rights Reserved
+    </p>
 
 </footer>
 
-<!-- Add these at the bottom of each HTML page, just before </body> -->
+
+<button onclick="logoutAdmin()" class="logout-btn">
+    Logout
+</button>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
@@ -113,11 +161,8 @@
 
 <script src="JAVASCRIPT/main.js"></script>
 
-<button onclick="logoutAdmin()" class="logout-btn">
+<script src="JAVASCRIPT/auth.js"></script>
 
-Logout
-
-</button>
 
 </body>
 
